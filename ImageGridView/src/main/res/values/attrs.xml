@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ImageGridView">
+
+        <!-- 图片大小（宽高一样） -->
+        <attr name="show_item_space" format="dimension" />
+        <!-- 最大数量 -->
+        <attr name="show_max" format="integer" />
+        <!-- 添加图片 -->
+        <attr name="show_add_img" format="reference" />
+        <!-- 删除图片 -->
+        <attr name="show_del_img" format="reference" />
+        <!-- 是否显示删除按钮-->
+        <attr name="show_is_show_del" format="boolean" />
+        <!-- 是否展示动画-->
+        <attr name="show_is_show_anim" format="boolean" />
+        <!-- 列数-->
+        <attr name="show_row_num" format="integer" />
+
+    </declare-styleable>
+
+</resources>
