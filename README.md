@@ -1,6 +1,6 @@
 # **表格添加图片**
 表格添加图片
-![image](/pic/device-2017-04-26-191343.jpg)
+![image](/pic/device-2017-04-26-1913432.jpg)
 
 ### 1.用法
     使用前，对于Android Studio的用户，可以选择添加:
