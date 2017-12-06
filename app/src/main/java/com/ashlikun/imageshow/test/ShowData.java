@@ -1,6 +1,6 @@
-package com.hbung.imageshow.test;
+package com.ashlikun.imageshow.test;
 
-import com.hbung.imageshow.ImageGridBean;
+import com.ashlikun.imageshow.ImageGridBean;
 
 /**
  * 作者　　: 李坤

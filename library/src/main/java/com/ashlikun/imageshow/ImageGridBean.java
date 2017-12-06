@@ -1,4 +1,4 @@
-package com.hbung.imageshow;
+package com.ashlikun.imageshow;
 
 /**
  * 作者　　: 李坤

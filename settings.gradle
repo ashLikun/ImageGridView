@@ -1,1 +1,1 @@
-include ':app', ':ImageGridView'
+include ':app', ':library'

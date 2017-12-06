@@ -1,4 +1,4 @@
-package com.hbung.imageshow.lietener;
+package com.ashlikun.imageshow.lietener;
 
 import android.content.Context;
 import android.support.annotation.DrawableRes;
@@ -12,11 +12,11 @@ import android.widget.ImageView;
  * <p>
  * 功能介绍：
  *
- * @see IImageGridLoader 的再次封装，createViewRoot
+ * @see IImageGridLoader 的再次封装，不需要createShowView，但是view的id要注意
  */
 
-public abstract class ImageGridViewLoader
-        implements IImageGridLoader<ImageView, View> {
+public abstract class ImageGridRootLoader<ROOT extends View>
+        implements IImageGridLoader<ImageView, ROOT> {
 
     @Override
     public void displayImage(Context context, @DrawableRes Integer resId, ImageView imageView) {
@@ -25,14 +25,7 @@ public abstract class ImageGridViewLoader
 
     //不需要实现
     @Override
-    public View createViewRoot(Context context) {
-        return null;
-    }
-
-    @Override
     public ImageView createShowView(Context context) {
-        ImageView iv = new ImageView(context);
-        iv.setScaleType(ImageView.ScaleType.CENTER_CROP);
-        return iv;
+        return null;
     }
 }

@@ -1,14 +1,15 @@
-package com.hbung.imageshow.test;
+package com.ashlikun.imageshow.test;
 
+import android.app.Application;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
-import com.hbung.glideutils.GlideUtils;
-import com.hbung.imageshow.ImageGridView;
-import com.hbung.imageshow.lietener.ImageGridListener;
-import com.hbung.imageshow.lietener.ImageGridViewLoader;
+import com.ashlikun.glideutils.GlideUtils;
+import com.ashlikun.imageshow.ImageGridView;
+import com.ashlikun.imageshow.lietener.ImageGridListener;
+import com.ashlikun.imageshow.lietener.ImageGridViewLoader;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,7 +40,22 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        GlideUtils.init(getApplication(), "www");
+        GlideUtils.init(new GlideUtils.OnNeedListener() {
+            @Override
+            public Application getApplication() {
+                return MainActivity.this.getApplication();
+            }
+
+            @Override
+            public boolean isDebug() {
+                return false;
+            }
+
+            @Override
+            public String getBaseUrl() {
+                return "www";
+            }
+        });
         setContentView(R.layout.activity_main);
         datas.add(new ShowData("http://img02.tooopen.com/images/20140504/sy_60294738471.jpg"));
         datas.add(new ShowData("http://pic.58pic.com/58pic/16/62/63/97m58PICyWM_1024.jpg"));

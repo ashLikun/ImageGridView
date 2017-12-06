@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.hbung.imageshow.ImageGridView
+    <com.ashlikun.imageshow.ImageGridView
         android:id="@+id/imageShowView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,7 +16,7 @@
         app:show_is_show_anim="true"
         app:show_is_show_del="true"
         app:show_max="9"
-        app:show_row_num="3"></com.hbung.imageshow.ImageGridView>
+        app:show_row_num="3"></com.ashlikun.imageshow.ImageGridView>
 
 
 </RelativeLayout>

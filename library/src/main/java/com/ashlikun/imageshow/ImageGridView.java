@@ -1,4 +1,4 @@
-package com.hbung.imageshow;
+package com.ashlikun.imageshow;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -11,9 +11,9 @@ import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.widget.FrameLayout;
 
-import com.hbung.imageshow.lietener.IImageGridListener;
-import com.hbung.imageshow.lietener.IImageGridLoader;
-import com.hbung.imageshow.lietener.ImageGridListener;
+import com.ashlikun.imageshow.lietener.IImageGridListener;
+import com.ashlikun.imageshow.lietener.IImageGridLoader;
+import com.ashlikun.imageshow.lietener.ImageGridListener;
 
 import java.util.List;
 
